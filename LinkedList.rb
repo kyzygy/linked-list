@@ -1,14 +1,4 @@
-require 'pry'
-
-class Node
-  attr_accessor :value, :next_node
-
-  def initialize(value)
-    @value = value
-    @next_node = nil
-  end
-
-end
+require "./Node.rb"
 
 class LinkedList
   def initialize
@@ -133,14 +123,3 @@ class LinkedList
     return false
   end
 end
-
-list = LinkedList.new
-list.append('a')
-list.append('b')
-list.append('c')
-list.append('d')
-list.append('e')
-list.append('f')
-
-
-binding.pry
